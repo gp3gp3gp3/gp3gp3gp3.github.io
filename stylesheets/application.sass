@@ -2,9 +2,40 @@
 $georgia-font-stack: Georgia, Times, "Times New Roman", serif !default
 $lucida-grande-font-stack: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !default
 
+html, body
+  height: 100%
+
+h1, h3
+  font-family: $lucida-grande-font-stack
+
 h1
-  font: 100% $georgia-font-stack
+  font-size: 4em
 
 p
-  font: 100% $lucida-grande-font-stack
+  font-family: $georgia-font-stack
 
+.fixed-nav-bar
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1050
+  width: 100%
+  height: 50px
+  border-bottom: 1px solid rgba(204,204,204,1)
+  background-color: black
+  color: white
+  text-align: center
+
+.heading
+  background-color: black
+  color: white
+  margin-top: 50px
+  padding: 100px 0
+  height: calc(100vh - 50px)
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(204,204,204,1)
+  -moz-box-shadow: 0px 4px 5px 0px rgba(204,204,204,1)
+  box-shadow: 0px 4px 5px 0px rgba(204,204,204,1)
+
+.projects
+  padding: 100px 0
+  height: calc(100vh - 50px)
