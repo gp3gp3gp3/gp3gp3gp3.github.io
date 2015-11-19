@@ -14,11 +14,10 @@ p
 nav
   top: 0
   position: fixed
-  height: 50px
   width: 100%
   background-color: black
   color: white
-  border-bottom: 1px solid white
+  border-bottom: 1px solid rgba(204,204,204,1)
   li
     display: inline
     text-align: center
@@ -49,48 +48,15 @@ nav
 .projects
   padding: 100px 0
   height: calc(100vh - 50px)
-
 .second
   text-align: right
 
 // Media Break
 @media screen and (max-width: 480px)
-  .heading
-    margin-top: 30px
-
-  .heading, .projects
-    height: calc(100vh - 30px)
-
   nav
-    height: 30px
-    ul
-      display: none
-      height: auto
+    position: relative
+    border-bottom: none
     li
-      width: 100%
-      float: left
-      position: relative
-    a
-      text-align: left
-      width: 100%
-      text-indent: 25px
-      background-color: black
-      border-bottom: 1px solid white
-    a#openup:after
-      content: "|||"
-      transform: rotate(-90deg)
-      -ms-transform: rotate(-90deg) /* IE 9 */
-      -webkit-transform: rotate(-90deg) /* Safari and Chrome */
-      width: 30px
-      height: 30px
-      display: inline-block
-      position: absolute
-      right: 5px
-      top: 20px
-
-    a#openup
-      display: block
-      background-color: black
-      color: white
-      width: 100%
-      position: relative
+      border-bottom: 1px solid rgba(204,204,204,1)
+  .heading
+    margin-top: 0
