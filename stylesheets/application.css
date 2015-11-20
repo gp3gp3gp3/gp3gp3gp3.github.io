@@ -58,7 +58,7 @@ nav {
   height: calc(100vh - 50px); }
   .projects h1 {
     text-align: center; }
-  .projects img#phone {
+  .projects img.phone {
     margin-top: -50px; }
 
 .second {
@@ -77,7 +77,7 @@ nav {
     nav li {
       border-bottom: 1px solid #cccccc; }
 
-  img#phone {
+  .phone {
     height: 100%;
     width: 100%; }
 
@@ -85,6 +85,18 @@ nav {
     padding: 20px; }
 
   .heading {
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  .extra {
+    display: none; }
+
+  .swap {
+    position: relative; }
+
+  .top {
+    top: -25em; }
+
+  .bottom {
+    bottom: -25em; } }
 
 /*# sourceMappingURL=application.css.map */
